@@ -10,7 +10,7 @@ Whether you are starting from zero or have a decade of experience under your bel
 
 Things that you should be EXCEPTIONALLY proud of yourself for doing…
 
-Things I’M exceptionally proud of you for doing…
+Things I’m exceptionally proud of you for doing…
 
 Tl;dr - I love you all, and it means the world to me that you’re here. Okay, on to the code…
 
@@ -41,11 +41,16 @@ Tl;dr - I love you all, and it means the world to me that you’re here. Okay, o
 
 *Mac Instructions:* Your machine should come with an application called “Terminal” - just confirm you have this app installed and can open it.
 
+![mac_terminal_400px](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/123aa4a7-ebb8-4a8b-bbaf-da80e4cf4ce5)
+
 1. Use Spotlight (cmd + space) to search for “terminal"
 2. Open the app.
 3. Come talk to me if you can’t find the app.
 
+
 *Windows Instructions:* Your system comes with a program called “Command Prompt.”
+
+![Windows_command_prompt_400px](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/668f397f-07c7-4988-b546-29316cde1e4b)
 
 1. To access it, click on the Start menu or press the Windows key.
 2. Type `cmd` into the search bar and press Enter.
@@ -67,8 +72,9 @@ First, some quick vocab for y’all:
 - **Git:** is an open source VCS. Think of it like a program that runs on your computer that you can use in your coding projects to help manage versions of that project.
 	- Managing versions of code becomes especially important the more iterations the code goes through, the more complex/large the codebase becomes, and the more people you have working on it.
 	- Git is the most common VCS for code today, by a large margin.
-	- We will have a section in a bit digging in and understanding Git.
+	- We will have a section in a-bit digging in and understanding Git.
 	- Git is NOT GitHub.
+        - Git Bash is the name for the command-line terminal environment
 	- Read about git here: https://git-scm.com/
 - **SCM:** “Source Code Manager” - A SCM is a tool to help *manage* source code. In particular, to help manage the sharing and using and collaboration on source code.
 	- GitHub is an example of an SCM (and the most popular in use by software engineers today).
@@ -80,10 +86,13 @@ First, some quick vocab for y’all:
 
 1. Head to https://git-scm.com/
 2. Click on “Downloads”
+
+![Git_download_400px JPG](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/cd97e0df-9f48-4a3e-b669-31de53399283)
+
 3. Download the version for your Operating System (Windows, Mac, Linux).
 	1. Click the Download icon for your OS under the “Download” banner.
 		1. DON’T download the GUI shown lower on the page.
-	2. This will download an installer, when finished, open and run the installer, following its instructions.
+	2. This will download an installer, when finished, open and run the installer, following its instructions and using the default settings.
 
 Let me know if you have problems installing Git.
 
@@ -124,7 +133,7 @@ First, some more vocab for you!
 
 Tl;dr - Node.js is how we run javascript on the “back-end” and what we will be using to build full stack apps in this curriculum. It lets us learn one programming language that we can use across the stack.
 
-Okay, now on to the install. This parts actually pretty easy. 
+Okay, now on to the install. This part is actually pretty easy. 
 1. Head to https://nodejs.org/en/download and download the LTS version for your operating system and hardware. It SHOULD be auto selected for your correct computer, but double check before downloading.
 2. Open the installer that is downloaded and follow the steps to install node.
 3. That’s it! Let me know if you get stuck!
