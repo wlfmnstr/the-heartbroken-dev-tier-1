@@ -152,3 +152,10 @@ Assuming you are logged in to github as detailed in the earlier steps, do the fo
 
 1. Click the fork button
 2. Follow the prompts to fork it to the github account you want to use with this cohort.
+
+
+### 7. Upload your Resume on YOUR Fork
+
+Now, we're going to practice collaborating on a github repository. Do the following:
+
+1. On YOUR fork of the repository, 
