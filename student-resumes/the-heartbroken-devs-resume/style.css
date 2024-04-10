@@ -1,83 +1,97 @@
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-    line-height: 1.6;
-    color: #212121;
-    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
-    padding: 20px;
-}
-
-h1 {
-    color: #212121;
-    text-align: center;
-    font-size: 3em;
-    margin-bottom: 50px;
+  h1 {
+  font-family: Ggsans, sans-serif; 
+  font-size: 38px;
+  font-weight: 800;
 }
 
 h2 {
-    color: #212121;
-    text-align: left;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #212121;
-}
-
+ font-family: Ggsans, sans-serif; 
+  font-size: 24px;
+  font-weight: 800;
+  padding: 5px;
+  }
+  
 h3 {
-    color: #212121;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
+ font-family: Ggsans, sans-serif; 
+  font-size: 14px;
+  font-weight: 700;
+  padding: 3px;
+  }
 
 p {
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    color: #424242;
+  font-family: Ggsans, sans-serif;
+  font-size: 14px; 
 }
 
-p strong {
-    color: #0061a8;
-    font-weight: 600;
+li {
+  font-family: Ggsans, sans-serif;
+  font-size: 14px; 
 }
 
-a {
-    color: #0061a8;
-    text-decoration: none;
-    transition: color 0.3s ease;
+#wave {
+  position: relative;
+  height: 35px;
+  width: absolute;
+  background: #fe1493;
+}
+hr.dotted {
+  border-top: 5px dotted #f8ff00;
 }
 
-a:hover {
-    color: #212121;
+.button {
+  padding: 7px 7px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #fe1493;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 4px #f8ff00;
+  animation: wiggle 2s linear infinite;
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background: #212121;
-    margin: 20px 0;
+.button:hover {
+color: #fe1493;
+background-color: #F8FF00;
+ box-shadow: 0 3px #fe1493;}
+
+.button:active {
+  color: #Fe1493,
+  background-color: #fff;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-ul li {
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    color: #424242;
+header {
+  width: 100%;
+  margin-bottom: 1%;
+  background: #fff;
+  padding: 1%;
 }
 
-ul li strong {
-    color: #0061a8;
-    font-weight: 600;
+aside {
+  clear: left;
+  float: left;
+  width: 33%;
+  margin-right: 2%;
+  padding: 2%;
+  background: #fe1493;
+  color: #fff;
 }
 
-/* Add some animation to the page */
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-body {
-    animation: fadeIn 2s ease-in 1;
+main {
+  float: left;
+  width: 60%;
+  margin-left: 2%;
+  padding: 0%;
+  background: #fff;
 }
