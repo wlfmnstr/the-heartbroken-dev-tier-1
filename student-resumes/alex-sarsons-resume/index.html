@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Sarson</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/1f1f9d7c19.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <div class="main-top w-100">
+      <header class="w-100 horizontal-lines">
+        <div class="container d-flex">
+          <h1>Alex's Resume</h1>
+          <img src="images/me.png" alt="Me">
+        </div>
+      </header>
+
+      <article class="w-100 horizontal-lines border-bottom-0">
+        <div class="container horizontal-lines">
+          <h2 class="heading">Skills</h2>
+          <div class="skill-icons icons d-flex">
+            <i class="fa-brands fa-html5" title="HTML5"></i>
+            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+            <i class="fa-brands fa-sass" title="Sass"></i>
+            <i class="fa-brands fa-js" title="JavaScript"></i>
+            <i class="fa-brands fa-php" title="PHP"></i>
+            <i class="fa-brands fa-wordpress-simple" title="WordPress"></i>
+            <i class="fa-brands fa-react" title="React"></i>
+            <i class="fa-brands fa-git-alt" title="Git"></i>
+            <i class="fa-brands fa-npm" title="NPM"></i>
+            <i class="fa-brands fa-grunt" title="Grunt"></i>
+            <i class="fa-brands fa-aws" title="AWS"></i>
+            <i class="fa-brands fa-docker" title="Docker"></i>
+            <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
+          </div>
+        </div>
+
+        <div class="container horizontal-lines px-0">
+          <h2 class="heading">Experience</h2>
+          <div class="accordions">
+            <div class="accordion">
+              <button class="accordion-top" onclick="accordionHandler(this)">
+                <h3>IT Support Technician</h3><i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="drawer closed">
+                <p>L.E.A.D. IT Services: August 2019 – January 2022</p>
+                <p>Full time employment working as a Site Technician. Responsibilities included handling customer
+                  queries (in person, by email or by phone), resolving technical issues either on site or remotely, and
+                  giving guidance and support to users struggling to use software. During this time I was also managing
+                  the schools websites and learning to code.</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <button class="accordion-top" onclick="accordionHandler(this)">
+                <h3>Web Development Manager</h3><i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="drawer closed">
+                <p>L.E.A.D. IT Services: January 2022 – June 2022</p>
+                <p>This role involved managing and developing websites for schools within the L.E.A.D. Academy Trust,
+                  external schools, and Cubowork.com. Responsibilities included executing website designs, collaborating
+                  with clients to meet launch deadlines, and enhancing admin panel efficiency through custom plugins on
+                  WordPress. Operating on a Windows server with Plesk, tasks extended to SSL certificate management, DNS
+                  record editing, and ensuring plugin and CMS versions remained updated. Notably, I crafted plugins
+                  employing custom post types to streamline administrative tasks and present content seamlessly on the
+                  frontend using PHP, HTML, CSS, and JavaScript. One such plugin organized vacancies chronologically,
+                  automatically transitioning posts to draft status upon reaching an end date, effectively managing
+                  content visibility.</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <button class="accordion-top" onclick="accordionHandler(this)">
+                <h3>Junior Web Developer</h3><i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="drawer closed">
+                <p>Magdalen Medical Publishing: June 2022 – August 2023</p>
+                <p>During my time as a Junior Web Developer, I was responsible for implementing new features within
+                  front-end and CMS systems, following a bi-weekly release schedule. Additionally, I handled bug fixes
+                  and issue resolutions across six journals and seven iw websites. Notably, a significant achievement
+                  during this period was learning GatsbyJS and ReactJS as part of the iw website redevelopment project,
+                  which greatly enhanced my professional capabilities.</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <button class="accordion-top" onclick="accordionHandler(this)">
+                <h3>Web Developer</h3><i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="drawer closed">
+                <p>Magdalen Medical Publishing: August 2023 – Present</p>
+                <p>My responsibilities at MMP haven't fundamentally shifted since my promotion, but I've taken on
+                  leadership roles in several projects aimed at enhancing our platform's architecture. Notably, I
+                  spearheaded the initiative to streamline our infrastructure by deploying the six journals as separate
+                  Docker containers from a unified repository onto AWS. This initiative significantly enhanced the
+                  workflow for our development team, allowing us to host the sites locally in Docker containers from a
+                  centralized repository. Through this project, I've honed my expertise with AWS and Docker, and I'm
+                  eager to apply these skills to similar projects, such as optimizing the Gatsby sites I developed
+                  earlier.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h2 class="heading">Hobbies & Interests</h2>
+          <p class="hobbies">My hobbies and interests are computer gaming, going to the gym, board/tabletop games,
+            reading, music and
+            anime. I'm currently 530 episodes into One Piece and I'm loving it! My favourite character is Usopp because
+            he's hilarious!</p>
+        </div>
+      </article>
+    </div>
+
+    <footer class="w-100 horizontal-lines">
+      <div class="container d-flex">
+        <p>Made by <span class="me" title="Alex Sarson">👨🏽‍💻</span></p>
+        <div class="icons d-flex">
+          <a href="https://github.com/alex-sarson" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/alex-sarson-553739149/" target="_blank" rel="noopener noreferrer"
+            title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/notdospek/?hl=en" target="_blank" rel="noopener noreferrer"
+            title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:alex.luke.sarson@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="ghost">
+      <div class="container vertical-lines h-100">
+        <div class="center-line h-100 w-50"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
