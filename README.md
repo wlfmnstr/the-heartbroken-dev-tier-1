@@ -146,16 +146,25 @@ By all means, play around with VSCode and get familiar with it! Its an awesome p
 
 Okay now we’re getting fancy and learning how to use this SCM stuff that we talked about earlier with GitHub.
 
-We are going to “Fork” this repository. Some of you may know what this means, and others it may be totally foreign. That’s great!
+We are going to “Fork” **this** repository. Some of you may know what this means, and others it may be totally foreign. That’s great! 
+- Forking is how you can clone / copy a repository that is outside of your GitHub account, into your github account. 
+- This will give you a "forked" copy of the repository that is now effectively totally your own repository.
+- You can make any changes you want to your fork without impacting the repository you forked from (my repository in this case).
+- The repository you forked from is called the "upstream" repository.
+- Forks keep track of the upstream as well, so as the original repository changes, or your repository changes, you will see on your repo how much "ahead" or "behind" the upstream repo your forked repo is. (this is cool if you are trying to make changes that you eventually want to request be incorporated into the upstream repo - a process we'll cover in just a bit!)
 
-Assuming you are logged in to github as detailed in the earlier steps, do the following to fork this repository:
-
-1. Click the fork button
-2. Follow the prompts to fork it to the github account you want to use with this cohort.
-
+**Here's how to do this:**
+1. assuming you are logged in to github as detailed in the earlier steps,from the main page of my repository for this tier-1 content (where you're probably reading this right now, but the url is [https://github.com/wlfmnstr/the-heartbroken-dev-tier-1](https://github.com/wlfmnstr/the-heartbroken-dev-tier-1)) click the "fork" button. Here's a screenshot:
+![click-the-fork-button](assets/click-the-fork-button.png)
+2. Follow the prompts to fork it to YOUR github account. Another screenshot: ![chose-where-to-fork-to](assets/chose-where-to-fork-to.png)
+3. When you click "create fork" it will redirect to your account, it sometimes takes a second to complete this step. You should have something that looks like this: ![your-new-forked-repo](assets/your-new-forked-repo.png)
 
 ### 7. Upload your Resume on YOUR Fork
 
-Now, we're going to practice collaborating on a github repository. Do the following:
+Now, we're going to practice collaborating on a github repository.
 
-1. On YOUR fork of the repository, 
+On YOUR new forked repository (NOT MINE, use the one in your github account that you just created in the previous steps) - you are going to create a directory for your resume files and upload them.
+
+The right way to do this is to first CLONE the repository (again, clone your fork, not my upstream original repo). Here are the steps to do this:
+
+1. Coming soon...
