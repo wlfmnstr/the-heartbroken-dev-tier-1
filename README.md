@@ -1,6 +1,6 @@
 ## Welcome
 
-Welcome Students to the Tier 1 of The Heartbroken Dev’s full-stack software engineering curriculum!
+Welcome Students to the Tier 1 of The Heartbroken Dev’s full-stack software engineering curriculum!!
 
 This is the first of several instructor led tiers which are specifically designed to give students the ability to build and deploy full stack software applications from scratch in 2024 and beyond.
 
