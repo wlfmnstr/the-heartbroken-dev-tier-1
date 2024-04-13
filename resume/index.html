@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html lang = "en"> 
+
+<head> 
+    <title>HTML Tutorial</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+    <style>
+        /* CSS goes here */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        body {
+            background-color: white;
+        }
+        h1 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: navy;
+            text-align: center;
+            font-size: 26px;
+        }
+        h2 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            text-align: left;
+            font-size: 20px;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* This spreads the child elements to both ends */
+            
+        }
+        .left-justified {
+            margin-left: 25px;
+            font-style: italic;
+            font-size: 16px;
+        }
+        .left-justified-title {
+            margin-left: 25px;
+            font-weight: 800;
+            font-size: 18px;
+        }
+        .right-justified {
+            margin-right: 30px;
+            font-style: italic;
+            font-size: 16px;
+        }
+        .job-desc-li {
+            margin-right: 60px;
+            margin-top: 0; /* Removes the top margin */
+            margin-bottom:0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .skills-li {
+            font-family: Arial, sans-serif;
+            column-count: 3;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 14px;
+        }
+
+    </style>
+</head> 
+
+<body>
+    <h1><b>DAVID'S RESUME</b></h1>
+    <p style="text-align: center;"> daviddasdfasf@gmail.com</p>
+    <p style="text-align: center;">123-456-7890</p> 
+    <p style="text-align: center;"><strong>Objective:</strong> Aspiring person looking to test their coding skills. 
+        Knowledgeable in the art of Crayon sculpturing and Lemongrass bonsai.  </p>
+    <div>
+        <hr>
+        <h2> EDUCATION</h2> 
+        <div class="flex-container">
+            <span class="left-justified-title">University of the World</span>
+            <span class="right-justified">2014-2016</span>
+          </div> 
+        <ul class="job-desc-li">
+            <li>MBA</li>
+        </ul> 
+        <br>
+          <div class="flex-container">
+            <span class="left-justified-title">University of the Country</span>
+            <span class="right-justified">2005-2009</span>
+          </div>
+        <ul class="job-desc-li">
+            <li>BS</li>
+        </ul>
+    </div>
+    <div> 
+        <hr>
+        <h2> EXPERIENCE</h2> 
+        
+        <div class="flex-container">
+            <span class="left-justified-title"> Manager </span>
+            <span class="right-justified"> 2020-2024</span>
+          </div> 
+        <div class="flex-container">
+            <span class="left-justified">Acme Corp</span>
+            <span class="right-justified">Phoenix, AZ</span>
+        </div> 
+        <ul class="job-desc-li">
+            <li>This is an accomplishment.</li>
+            <li> Hey, another accomplishment.</li>
+            <li>Wow, you are amazing.</li>
+        </ul>
+        <br>   
+        <div class="flex-container">
+            <span class="left-justified-title"> Analyst </span>
+            <span class="right-justified"> 2018-2020</span>
+          </div> 
+        <div class="flex-container">
+            <span class="left-justified">Bonzo LLC</span>
+            <span class="right-justified">Anchorage, AK</span>
+        </div> 
+        <ul class="job-desc-li">
+            <li>Just learning how to use html.</li>
+            <li>Analyzed stuff</li>
+            <li>Processed data and looked at screens</li>
+        </ul>   
+        <br>   
+        <div class="flex-container">
+            <span class="left-justified-title"> Intern </span>
+            <span class="right-justified"> 2016-2018</span>
+          </div> 
+        <div class="flex-container">
+            <span class="left-justified">Beakman Labs</span>
+            <span class="right-justified">Springfield, IL</span>
+        </div> 
+        <ul class="job-desc-li">
+            <li>Ordered Pizzas</li>
+            <li>Added alcohol to coffee</li>
+            <li>Cleaned microwave</li>
+        </ul>  
+    </div>
+    <div>
+        <hr>
+
+        <h2> TECHNICAL SKILLS</h2>
+        <ul class="skills-li">
+            <li>R</li>
+            <li>Python</li>
+            <li>Tableau</li>
+            <li>Salesforce</li>
+            <li>Jira</li>
+            <li>Looker</li>
+            <li>Microsoft Office</li>
+            <li>Wordpress</li>
+        </ul>
+    </div>
+</body> 
+
+</html
+
+
+  
