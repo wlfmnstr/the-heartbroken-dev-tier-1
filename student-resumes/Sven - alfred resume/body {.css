@@ -1,0 +1,7 @@
+body {
+    background-image: url(bubbles.jpg); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fix the background image while scrolling */
+    /* Add additional styles if needed */
+}
