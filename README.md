@@ -1,6 +1,6 @@
 ## Welcome
 
-Welcome Students to the Tier 1 of The Heartbroken Dev’s full-stack software engineering curriculum!
+Welcome Students to the Tier 1 of The Heartbroken Dev’s full-stack software engineering curriculum!!
 
 This is the first of several instructor led tiers which are specifically designed to give students the ability to build and deploy full stack software applications from scratch in 2024 and beyond.
 
@@ -47,8 +47,12 @@ Tl;dr - I love you all, and it means the world to me that you’re here. Okay, o
 2. Open the app.
 3. Come talk to me if you can’t find the app.
 
+*Windows Instructions:* 
 
-*Windows Instructions:* Your system comes with a program called “Command Prompt.”
+#### Native Command Prompt (Shell)
+
+Your system comes with a program called “Command Prompt.”
+
 
 ![Windows_command_prompt_400px](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/668f397f-07c7-4988-b546-29316cde1e4b)
 
@@ -61,6 +65,23 @@ Tl;dr - I love you all, and it means the world to me that you’re here. Okay, o
 	2. Select the app from the search results and click on the “Get” button to download and install it.
 5. Once you have either Command Prompt or Windows Terminal open, you're ready to proceed with the necessary commands or operations.
 6. If you encounter any issues opening Command Prompt or Windows Terminal, please reach out for assistance.
+
+#### Windows Subsystem for Linux
+Alternatively you can install the windows subsystem for linux to be able to run a shell and have an environment more similar to mac.
+
+1. Enable the WSL by going into the control pannel / settings and then select Apps (or it might be named Programs).
+![settings screenshot](assets/settings-apps.png)
+2. Select "Programs and Features"
+![Programs and Features screenshot](assets/apps-features.png)
+3. Enable the 
+![Programs and Features screenshot](assets/programs-and-features.png)
+4. Scroll down and enable the Windows Subsystem for Linux
+![enable screenshot](assets/windows-features.png)
+5. This will ask you to reboot, say yes.
+6. After you reboot, run a admin powershell by typing it in the search bar next to the start menu and right clicking it from the list "Run as administrator"
+7. This opens up a PowerShell. Type `wsl --install -D Ubuntu`. This will download the distro and prompt you for a username and password to use in your WSL environment.
+8. Type `wsl` from a PowerShell to run the default shell.
+9. Git will already be installed. You can install node with `sudo apt install nodejs`
 
 ### 3. Install Git
 
