@@ -1,0 +1,92 @@
+:where(:not(html,iframe,canvas,img,svg,video,audio):not(svg *,symbol *)){all:unset;display:revert}*,::after,::before{box-sizing:border-box}html{-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none}a,button{cursor:revert}menu,ol,summary,ul{list-style:none}img{max-inline-size:100%;max-block-size:100%}table{border-collapse:collapse}input,textarea{-webkit-user-select:auto}textarea{white-space:revert}meter{-webkit-appearance:revert;appearance:revert}:where(pre){all:revert;box-sizing:border-box}::placeholder{color:unset}:where([hidden]){display:none}:where([contenteditable]:not([contenteditable=false])){-moz-user-modify:read-write;-webkit-user-modify:read-write;overflow-wrap:break-word;-webkit-line-break:after-white-space;-webkit-user-select:auto}:where([draggable=true]){-webkit-user-drag:element}:where(dialog:modal){all:revert;box-sizing:border-box}::-webkit-details-marker{display:none}
+
+html
+{
+   font-size: 10px;
+}
+
+body
+{
+   color: #111;
+   font-size: 1.4rem;
+   font-family: "Open Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   font-variation-settings: "wdth" 100;
+   line-height: 1.5;
+
+   max-width: 86rem;
+   margin: 0 auto;
+   padding: 3rem;
+   background: rgb(255, 255, 250);
+}
+
+a
+{
+   text-decoration: underline;
+   text-underline-offset: 0.4rem;
+}
+
+a:hover, a:focus
+{
+   text-decoration: none;
+}
+
+h1
+{
+   font-weight: 500;
+   font-size: 3rem;
+   margin-bottom: 1rem;
+}
+
+h2
+{
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+}
+
+header, section
+{
+   margin: 0 0 3.5rem 0;
+}
+
+section div
+{
+   margin-bottom: 0.7rem;
+}
+
+address ul
+{
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 4rem;
+   row-gap: 1rem;
+}
+
+.details span
+{
+   font-weight: 600;
+}
+
+.details span:first-of-type
+{
+   font-style: italic;
+}
+
+.details span:first-of-type:after
+{
+   content: "—";
+   margin: 0 1rem;
+}
+
+section ul
+{
+   list-style: disc;
+
+   li
+   {
+      margin: 0 0 0.7rem 1.4rem;
+   }
+}
