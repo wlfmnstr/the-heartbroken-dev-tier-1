@@ -41,7 +41,7 @@ Tl;dr - I love you all, and it means the world to me that you’re here. Okay, o
 
 *Mac Instructions:* Your machine should come with an application called “Terminal” - just confirm you have this app installed and can open it.
 
-![mac_terminal_400px](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/123aa4a7-ebb8-4a8b-bbaf-da80e4cf4ce5)
+![assets/mac_terminal_400px](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/123aa4a7-ebb8-4a8b-bbaf-da80e4cf4ce5)
 
 1. Use Spotlight (cmd + space) to search for “terminal"
 2. Open the app.
@@ -54,7 +54,7 @@ Tl;dr - I love you all, and it means the world to me that you’re here. Okay, o
 Your system comes with a program called “Command Prompt.”
 
 
-![Windows_command_prompt_400px](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/668f397f-07c7-4988-b546-29316cde1e4b)
+![assets/Windows_command_prompt_400px](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/668f397f-07c7-4988-b546-29316cde1e4b)
 
 1. To access it, click on the Start menu or press the Windows key.
 2. Type `cmd` into the search bar and press Enter.
