@@ -212,65 +212,65 @@ The flow will look something like this:
 
 Here’s a diagram (if this is helpful, great! If its just more confusion, don’t sweat it, you don’t need to understand the diagram right now).
 
-![[github-fork-pr-diagram.png]]
+![assets/github-fork-pr-diagram.png](assets/github-fork-pr-diagram.png)
 
 #### Clone Your Fork
 
-1. After you’ve forked the “upstream” repository and have navigated to **your** forked repo on GitHub, copy the git url from the repository page. Screenshot: ![[assets/copy-repo-url.png]]
-2. In your command prompt, navigate to the location you want to clone your repository to in your file system, then run the command `git clone` followed by the url you copied. In my case that looks like this: ![[git-clone-command.png]]
+1. After you’ve forked the “upstream” repository and have navigated to **your** forked repo on GitHub, copy the git url from the repository page. Screenshot: ![assets/copy-repo-url.png](assets/copy-repo-url.png)
+2. In your command prompt, navigate to the location you want to clone your repository to in your file system, then run the command `git clone` followed by the url you copied. In my case that looks like this: ![assets/git-clone-command.png](assets/git-clone-command.png)
 
    This will pull down the repo to you computer, creating a directory wherever you run the command, named whatever the repository you are cloning is named. In this case, the directory it created was called `the-heartbroken-dev-tier-1`.
 
-3. List the contents of the directory you’re in to confirm the clone operation was successful: ![[list-cloned-directory.png]]
+3. List the contents of the directory you’re in to confirm the clone operation was successful: ![assets/list-cloned-directory.png](assets/list-cloned-directory.png)
    (I also used the `|` pipe and `grep` commands in my example to filter the results of running the list contents command `ls` to just results the contained `the-heart`. If you’re interested, you can read about pipe and grep in linux here: https://faculty.winthrop.edu/dannellys/csci208lab/lab09.htm)
 
 #### Open the Repository You Cloned
 
 Now that you’ve got a local copy of the repo, let’s open it up in our code editor of choice, VS Code.
 
-1. Open VS Code and click `file` > `open folder` (might look a little different on windows): ![[vscode-file-open-folder.png]]
-2. Then select the directory you just created when you cloned the repo and click “open”: ![[select-the-repo-directory.png]]
-3. You should have the repository open in VS Code now: ![[vscode-opened-repo.png]]
+1. Open VS Code and click `file` > `open folder` (might look a little different on windows): ![assets/vscode-file-open-folder.png](assets/vscode-file-open-folder.png)
+2. Then select the directory you just created when you cloned the repo and click “open”: ![assets/select-the-repo-directory.png](assets/select-the-repo-directory.png)
+3. You should have the repository open in VS Code now: ![assets/vscode-opened-repo.png](assets/vscode-opened-repo.png)
 
 #### Create a Directory for Your Resume and Add Your Files to it
 
 Now we want to add some of your code to this repository. We’ll use the html and css files your created for the pre-work assignments here. Follow these steps:
 
 1. Create a directory inside of `student-resumes` using the naming convention: `<yourname>-resume`. You can do this by right clicking on the `student-resumes` directory in the *File Explorer* tab of VSCode, like so:
-	1. Go to File Explorer ![[file-explorer-tab.png]]
-	2. Create the new directory (vs code calls it a folder): ![[new-folder-vscode.png]]
-	3. Name it following the described naming convention: ![[name-your-resume-folder.png]]
-	4. Add your resume files - you can do this from the command line if you know how, or you can drag & drop like I did: ![[drag-and-drop.png]]
+	1. Go to File Explorer ![assets/file-explorer-tab.png](assets/file-explorer-tab.png)
+	2. Create the new directory (vs code calls it a folder): ![assets/new-folder-vscode.png](assets/new-folder-vscode.png)
+	3. Name it following the described naming convention: ![assets/name-your-resume-folder.png](assets/name-your-resume-folder.png)
+	4. Add your resume files - you can do this from the command line if you know how, or you can drag & drop like I did: ![assets/drag-and-drop.png](assets/drag-and-drop.png)
 
 #### Commit and Push Your Changes
 
 Ok, now we’ve made changes to our local repository, and we should “push” these changes to our remote repository so they aren’t just on our computer.
 
 1. From your command prompt, navigate to this repository’s directory, and add the new files and changes to the git “staging area.” Do this with the `git add` command. Some notes:
-	1. You can see what the state of your repository is, including changed files and what has been added to the staging area by running `git status`: ![[git-status.png]]
+	1. You can see what the state of your repository is, including changed files and what has been added to the staging area by running `git status`: ![assets/git-status.png](assets/git-status.png)
 	2. `git add` needs an additional argument passed to it: the specific files you want to add. You can specify the files specifically, one at a time, or multiple other ways.
 	3. A nice shortcut if you want to add everything that’s been updated to the staging area is the `.` specifier, which says “the things in my current *working directory*” (working directory just means the directory you’ve currently navigated to in your command prompt).
-	4. So, the end result is (assuming you’ve navigated to your repository folder): `git add .` ![[git-add-command.png]]
-	5. Run `git status` again and see that the files have been staged and are ready to be “committed”: ![[status-pre-commit.png]]
+	4. So, the end result is (assuming you’ve navigated to your repository folder): `git add .` ![assets/git-add-command.png](assets/git-add-command.png)
+	5. Run `git status` again and see that the files have been staged and are ready to be “committed”: ![assets/status-pre-commit.png](assets/status-pre-commit.png)
 2. Now we want to actually commit these staged changes. Having the staging area is nice because sometimes you made LOTS of changes and only want to commit some of them and it helps to sort everything out. Like laying your camping items out on the floor before putting them into your backpack or car. Simply run the “commit” command to create a commit of your staged changes. The command is `git commit` but we want to include a “commit message” too!
 	1. Do this by also passing the `-m` command “flag” to the git commit command, followed by your commit message in quotes like: `"My commit message"`.
 	2. The end result should look like: `git commit -m "Adds Caseys Resume directory and files"`.
-	3. You can run git status afterwards to see the new state of the repository: ![[status-after-commit.png]]
+	3. You can run git status afterwards to see the new state of the repository: ![assets/status-after-commit.png](assets/status-after-commit.png)
 3. Now we want to “push” or local repository which contains the new commit we just made to our remote repository in github. Do this with the `git push` command. You shouldn’t need anything else, though it may require you to login/authenticate…
 	1. [Here’s a link](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line) on how to use personal access tokens on the command line in case you weren’t already prompted to login when cloning the repository in previous steps.
 	2. A personal access token is like  a password you can use with your username to login to github.
 	3. All of this might be irrelevant if you’ve already successfully logged in, and I haven’t really worked through writing this part out for students, so come see me or check in the discord chat for your cohort to see how students resolved issue if they ran into them around logging into github on the command line!
 
 
-	 Assuming you’re logged in correctly and attempting to push to the correct repo, you should get a success message when running `git push` (yours will look a little different for you, but you should get a success message after pushing to YOUR fork): ![[push-to-remote.png]]
+	 Assuming you’re logged in correctly and attempting to push to the correct repo, you should get a success message when running `git push` (yours will look a little different for you, but you should get a success message after pushing to YOUR fork): ![assets/push-to-remote.png](assets/push-to-remote.png)
 
 
 #### Create a Pull Request from your fork to my Upstream repo
 
 Okay, lastly we are going to request to pull your changes you made on your copy of the repo into my original “upstream” repo. Do this from the GitHub website.
-1. Navigate to your forked version of the repository. It should state that there are changes and it is ahead of the upstream repo by some commits, click on the “_ commit ahead of” link: ![[1-commit-ahead.png]]
-2. This will take you to a page that is the start of creating a pull request, click the “Create pull request” button: ![[create-pull-request.png]]
-3. Type in some helpful additional details on the pull request, like what changes are included, etc. and then click “create pull request” one again! ![[pr-details.png]]
+1. Navigate to your forked version of the repository. It should state that there are changes and it is ahead of the upstream repo by some commits, click on the “_ commit ahead of” link: ![assets/1-commit-ahead.png](assets/1-commit-ahead.png)
+2. This will take you to a page that is the start of creating a pull request, click the “Create pull request” button: ![assets/create-pull-request.png](assets/create-pull-request.png)
+3. Type in some helpful additional details on the pull request, like what changes are included, etc. and then click “create pull request” one again! ![assets/pr-details.png](assets/pr-details.png)
 4. You should now see the created pull request page, which will be in a state of “waiting for review” which just means you can’t merge it yet, but the owners of the repository you are request to pull your changes into have been notified and can review your changes and merge the PR when they are ready!
 
 
