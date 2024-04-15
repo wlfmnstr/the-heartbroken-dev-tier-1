@@ -1,0 +1,37 @@
+@charset "utf8";
+/*top image of dog*/
+#cutefloof {
+    border: 2px solid blueviolet;
+    width: 150px;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px;
+}
+
+h3{
+    text-align: center;
+}
+
+body{
+    background-color: seagreen;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+    margin-right: auto;
+    padding:0%;
+}
+
+ul h6{
+    color: bisque;
+    margin-top: 0px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+hr {
+    margin-left: -20px;
+}
