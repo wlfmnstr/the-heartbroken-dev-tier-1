@@ -1,0 +1,97 @@
+body {
+  h1 {
+  font-family: Ggsans, sans-serif; 
+  font-size: 38px;
+  font-weight: 800;
+}
+
+h2 {
+ font-family: Ggsans, sans-serif; 
+  font-size: 24px;
+  font-weight: 800;
+  padding: 5px;
+  }
+  
+h3 {
+ font-family: Ggsans, sans-serif; 
+  font-size: 14px;
+  font-weight: 700;
+  padding: 3px;
+  }
+
+p {
+  font-family: Ggsans, sans-serif;
+  font-size: 14px; 
+}
+
+li {
+  font-family: Ggsans, sans-serif;
+  font-size: 14px; 
+}
+
+#wave {
+  position: relative;
+  height: 35px;
+  width: absolute;
+  background: #fe1493;
+}
+hr.dotted {
+  border-top: 5px dotted #f8ff00;
+}
+
+.button {
+  padding: 7px 7px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #fe1493;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0 4px #f8ff00;
+  animation: wiggle 2s linear infinite;
+}
+
+.button:hover {
+color: #fe1493;
+background-color: #F8FF00;
+ box-shadow: 0 3px #fe1493;}
+
+.button:active {
+  color: #Fe1493,
+  background-color: #fff;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 1%;
+  background: #fff;
+  padding: 1%;
+}
+
+aside {
+  clear: left;
+  float: left;
+  width: 33%;
+  margin-right: 2%;
+  padding: 2%;
+  background: #fe1493;
+  color: #fff;
+}
+
+main {
+  float: left;
+  width: 60%;
+  margin-left: 2%;
+  padding: 0%;
+  background: #fff;
+}
