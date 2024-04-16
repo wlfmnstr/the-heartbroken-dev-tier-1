@@ -10,7 +10,7 @@ Whether you are starting from zero or have a decade of experience under your bel
 
 Things that you should be EXCEPTIONALLY proud of yourself for doing…
 
-Things I’M exceptionally proud of you for doing…
+Things I’m exceptionally proud of you for doing…
 
 Tl;dr - I love you all, and it means the world to me that you’re here. Okay, on to the code…
 
@@ -41,11 +41,19 @@ Tl;dr - I love you all, and it means the world to me that you’re here. Okay, o
 
 *Mac Instructions:* Your machine should come with an application called “Terminal” - just confirm you have this app installed and can open it.
 
+![assets/mac_terminal_400px](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/123aa4a7-ebb8-4a8b-bbaf-da80e4cf4ce5)
+
 1. Use Spotlight (cmd + space) to search for “terminal"
 2. Open the app.
 3. Come talk to me if you can’t find the app.
 
-*Windows Instructions:* Your system comes with a program called “Command Prompt.”
+*Windows Instructions:*
+
+#### Native Command Prompt (Shell)
+
+Your system comes with a program called “Command Prompt.”
+
+![assets/Windows_command_prompt_400px](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/668f397f-07c7-4988-b546-29316cde1e4b)
 
 1. To access it, click on the Start menu or press the Windows key.
 2. Type `cmd` into the search bar and press Enter.
@@ -57,6 +65,24 @@ Tl;dr - I love you all, and it means the world to me that you’re here. Okay, o
 5. Once you have either Command Prompt or Windows Terminal open, you're ready to proceed with the necessary commands or operations.
 6. If you encounter any issues opening Command Prompt or Windows Terminal, please reach out for assistance.
 
+#### Windows Subsystem for Linux
+
+Alternatively you can install the windows subsystem for linux to be able to run a shell and have an environment more similar to mac.
+
+1. Enable the WSL by going into the control pannel / settings and then select Apps (or it might be named Programs).
+![settings screenshot](assets/settings-apps.png)
+2. Select "Programs and Features"
+![Programs and Features screenshot](assets/apps-features.png)
+3. Enable the
+![Programs and Features screenshot](assets/programs-and-features.png)
+4. Scroll down and enable the Windows Subsystem for Linux
+![enable screenshot](assets/windows-features.png)
+5. This will ask you to reboot, say yes.
+6. After you reboot, run a admin powershell by typing it in the search bar next to the start menu and right clicking it from the list "Run as administrator"
+7. This opens up a PowerShell. Type `wsl --install -D Ubuntu`. This will download the distro and prompt you for a username and password to use in your WSL environment.
+8. Type `wsl` from a PowerShell to run the default shell.
+9. Git will already be installed. You can install node with `sudo apt install nodejs`
+
 ### 3. Install Git
 
 First, some quick vocab for y’all:
@@ -67,8 +93,9 @@ First, some quick vocab for y’all:
 - **Git:** is an open source VCS. Think of it like a program that runs on your computer that you can use in your coding projects to help manage versions of that project.
 	- Managing versions of code becomes especially important the more iterations the code goes through, the more complex/large the codebase becomes, and the more people you have working on it.
 	- Git is the most common VCS for code today, by a large margin.
-	- We will have a section in a bit digging in and understanding Git.
+	- We will have a section in a-bit digging in and understanding Git.
 	- Git is NOT GitHub.
+        - Git Bash is the name for the command-line terminal environment
 	- Read about git here: https://git-scm.com/
 - **SCM:** “Source Code Manager” - A SCM is a tool to help *manage* source code. In particular, to help manage the sharing and using and collaboration on source code.
 	- GitHub is an example of an SCM (and the most popular in use by software engineers today).
@@ -80,10 +107,13 @@ First, some quick vocab for y’all:
 
 1. Head to https://git-scm.com/
 2. Click on “Downloads”
-3. Download the version for your Operating System (Windows, Mac, Linux).
+
+![Git_download_400px JPG](https://github.com/Kazleigh/the-heartbroken-dev-tier-1/assets/165062302/cd97e0df-9f48-4a3e-b669-31de53399283)
+
+1. Download the version for your Operating System (Windows, Mac, Linux).
 	1. Click the Download icon for your OS under the “Download” banner.
 		1. DON’T download the GUI shown lower on the page.
-	2. This will download an installer, when finished, open and run the installer, following its instructions.
+	2. This will download an installer, when finished, open and run the installer, following its instructions and using the default settings.
 
 Let me know if you have problems installing Git.
 
@@ -124,7 +154,8 @@ First, some more vocab for you!
 
 Tl;dr - Node.js is how we run javascript on the “back-end” and what we will be using to build full stack apps in this curriculum. It lets us learn one programming language that we can use across the stack.
 
-Okay, now on to the install. This parts actually pretty easy. 
+Okay, now on to the install. This part is actually pretty easy.
+
 1. Head to https://nodejs.org/en/download and download the LTS version for your operating system and hardware. It SHOULD be auto selected for your correct computer, but double check before downloading.
 2. Open the installer that is downloaded and follow the steps to install node.
 3. That’s it! Let me know if you get stuck!
@@ -141,13 +172,13 @@ Do these things if you didn’t install VS Code yet, as this is the editor I’l
 
 By all means, play around with VSCode and get familiar with it! Its an awesome piece of software that is almost infinitely extensible with its massive library of installable extensions, and it comes pretty great out of the box.
 
-
-### 6. Fork this repository
+### 6. Fork This Repository
 
 Okay now we’re getting fancy and learning how to use this SCM stuff that we talked about earlier with GitHub.
 
-We are going to “Fork” **this** repository. Some of you may know what this means, and others it may be totally foreign. That’s great! 
-- Forking is how you can clone / copy a repository that is outside of your GitHub account, into your github account. 
+We are going to “Fork” **this** repository. Some of you may know what this means, and others it may be totally foreign. That’s great!
+
+- Forking is how you can clone / copy a repository that is outside of your GitHub account, into your github account.
 - This will give you a "forked" copy of the repository that is now effectively totally your own repository.
 - You can make any changes you want to your fork without impacting the repository you forked from (my repository in this case).
 - The repository you forked from is called the "upstream" repository.
@@ -159,12 +190,90 @@ We are going to “Fork” **this** repository. Some of you may know what this m
 2. Follow the prompts to fork it to YOUR github account. Another screenshot: ![chose-where-to-fork-to](assets/chose-where-to-fork-to.png)
 3. When you click "create fork" it will redirect to your account, it sometimes takes a second to complete this step. You should have something that looks like this: ![your-new-forked-repo](assets/your-new-forked-repo.png)
 
-### 7. Upload your Resume on YOUR Fork
+### 7. Add Your Resume to Your Fork Using Git Commands and PR back to My Repo
 
-Now, we're going to practice collaborating on a github repository.
+***IMPORTANT NOTE ABOUT SCREENSHOTS***
+The screenshots are for example purposes only, dont rely on them totally, as the urls, repositories, etc. won’t match up perfectly with what you should see when running git commands and cloning/pushing to and from your personal forks of my repository! Follow the written instructions and understand that the screenshots might show things like pushing to `wlfmnstr/the-heartbroken-dev-tier-1` when your screen will look more like `your-username/the-heartbroken-dev-tier-1`. 
 
-On YOUR new forked repository (NOT MINE, use the one in your github account that you just created in the previous steps) - you are going to create a directory for your resume files and upload them.
+tl;dr - trust the instructions as the source of truth and use the screenshots as helpful examples.
 
-The right way to do this is to first CLONE the repository (again, clone your fork, not my upstream original repo). Here are the steps to do this:
+…
 
-1. Coming soon...
+Okay, now, we're going to practice collaborating on a github repository!
+
+The flow will look something like this:
+
+1. Fork the repo to you personal GitHub account
+2. Clone your forked repo to your local machine
+3. Add a directory and resume files to your local copy of the repo
+4. Commit the changes (the new files and directory you added) to your local repo
+5. Pushes those changes from your local repo to the remote repo (your fork still)
+6. Create Pull Request from your fork to my original repo, which is the “upstream” repo in this context.
+
+Here’s a diagram (if this is helpful, great! If its just more confusion, don’t sweat it, you don’t need to understand the diagram right now).
+
+![assets/github-fork-pr-diagram.png](assets/github-fork-pr-diagram.png)
+
+#### Clone Your Fork
+
+1. After you’ve forked the “upstream” repository and have navigated to **your** forked repo on GitHub, copy the git url from the repository page. Screenshot: ![assets/copy-repo-url.png](assets/copy-repo-url.png)
+2. In your command prompt, navigate to the location you want to clone your repository to in your file system, then run the command `git clone` followed by the url you copied. In my case that looks like this: ![assets/git-clone-command.png](assets/git-clone-command.png)
+
+   This will pull down the repo to you computer, creating a directory wherever you run the command, named whatever the repository you are cloning is named. In this case, the directory it created was called `the-heartbroken-dev-tier-1`.
+
+3. List the contents of the directory you’re in to confirm the clone operation was successful: ![assets/list-cloned-directory.png](assets/list-cloned-directory.png)
+   (I also used the `|` pipe and `grep` commands in my example to filter the results of running the list contents command `ls` to just results the contained `the-heart`. If you’re interested, you can read about pipe and grep in linux here: https://faculty.winthrop.edu/dannellys/csci208lab/lab09.htm)
+
+#### Open the Repository You Cloned
+
+Now that you’ve got a local copy of the repo, let’s open it up in our code editor of choice, VS Code.
+
+1. Open VS Code and click `file` > `open folder` (might look a little different on windows): ![assets/vscode-file-open-folder.png](assets/vscode-file-open-folder.png)
+2. Then select the directory you just created when you cloned the repo and click “open”: ![assets/select-the-repo-directory.png](assets/select-the-repo-directory.png)
+3. You should have the repository open in VS Code now: ![assets/vscode-opened-repo.png](assets/vscode-opened-repo.png)
+
+#### Create a Directory for Your Resume and Add Your Files to it
+
+Now we want to add some of your code to this repository. We’ll use the html and css files your created for the pre-work assignments here. Follow these steps:
+
+1. Create a directory inside of `student-resumes` using the naming convention: `<yourname>-resume`. You can do this by right clicking on the `student-resumes` directory in the *File Explorer* tab of VSCode, like so:
+	1. Go to File Explorer ![assets/file-explorer-tab.png](assets/file-explorer-tab.png)
+	2. Create the new directory (vs code calls it a folder): ![assets/new-folder-vscode.png](assets/new-folder-vscode.png)
+	3. Name it following the described naming convention: ![assets/name-your-resume-folder.png](assets/name-your-resume-folder.png)
+	4. Add your resume files - you can do this from the command line if you know how, or you can drag & drop like I did: ![assets/drag-and-drop.png](assets/drag-and-drop.png)
+
+#### Commit and Push Your Changes
+
+Ok, now we’ve made changes to our local repository, and we should “push” these changes to our remote repository so they aren’t just on our computer.
+
+1. From your command prompt, navigate to this repository’s directory, and add the new files and changes to the git “staging area.” Do this with the `git add` command. Some notes:
+	1. You can see what the state of your repository is, including changed files and what has been added to the staging area by running `git status`: ![assets/git-status.png](assets/git-status.png)
+	2. `git add` needs an additional argument passed to it: the specific files you want to add. You can specify the files specifically, one at a time, or multiple other ways.
+	3. A nice shortcut if you want to add everything that’s been updated to the staging area is the `.` specifier, which says “the things in my current *working directory*” (working directory just means the directory you’ve currently navigated to in your command prompt).
+	4. So, the end result is (assuming you’ve navigated to your repository folder): `git add .` ![assets/git-add-command.png](assets/git-add-command.png)
+	5. Run `git status` again and see that the files have been staged and are ready to be “committed”: ![assets/status-pre-commit.png](assets/status-pre-commit.png)
+2. Now we want to actually commit these staged changes. Having the staging area is nice because sometimes you made LOTS of changes and only want to commit some of them and it helps to sort everything out. Like laying your camping items out on the floor before putting them into your backpack or car. Simply run the “commit” command to create a commit of your staged changes. The command is `git commit` but we want to include a “commit message” too!
+	1. Do this by also passing the `-m` command “flag” to the git commit command, followed by your commit message in quotes like: `"My commit message"`.
+	2. The end result should look like: `git commit -m "Adds Caseys Resume directory and files"`.
+	3. You can run git status afterwards to see the new state of the repository: ![assets/status-after-commit.png](assets/status-after-commit.png)
+3. Now we want to “push” or local repository which contains the new commit we just made to our remote repository in github. Do this with the `git push` command. You shouldn’t need anything else, though it may require you to login/authenticate…
+	1. [Here’s a link](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line) on how to use personal access tokens on the command line in case you weren’t already prompted to login when cloning the repository in previous steps.
+	2. A personal access token is like  a password you can use with your username to login to github.
+	3. All of this might be irrelevant if you’ve already successfully logged in, and I haven’t really worked through writing this part out for students, so come see me or check in the discord chat for your cohort to see how students resolved issue if they ran into them around logging into github on the command line!
+
+
+	 Assuming you’re logged in correctly and attempting to push to the correct repo, you should get a success message when running `git push` (yours will look a little different for you, but you should get a success message after pushing to YOUR fork): ![assets/push-to-remote.png](assets/push-to-remote.png)
+
+
+#### Create a Pull Request from your fork to my Upstream repo
+
+Okay, lastly we are going to request to pull your changes you made on your copy of the repo into my original “upstream” repo. Do this from the GitHub website.
+1. Navigate to your forked version of the repository. It should state that there are changes and it is ahead of the upstream repo by some commits, click on the “_ commit ahead of” link: ![assets/1-commit-ahead.png](assets/1-commit-ahead.png)
+2. This will take you to a page that is the start of creating a pull request, click the “Create pull request” button: ![assets/create-pull-request.png](assets/create-pull-request.png)
+3. Type in some helpful additional details on the pull request, like what changes are included, etc. and then click “create pull request” one again! ![assets/pr-details.png](assets/pr-details.png)
+4. You should now see the created pull request page, which will be in a state of “waiting for review” which just means you can’t merge it yet, but the owners of the repository you are request to pull your changes into have been notified and can review your changes and merge the PR when they are ready!
+
+
+#### PHEW!
+
+Alright, you’ve done it! That was probably a lot of stuff for a lot of you, but you’ve successfully navigated the command line, wrapped your head around git and github and even used it to make what’s possibly your first ever PRs in your career…. HELL YEAH!
