@@ -1,0 +1,65 @@
+<style>
+        /* CSS goes here */
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        body {
+            background-color: white;
+        }
+        h1 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: navy;
+            text-align: center;
+            font-size: 26px;
+        }
+        h2 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            text-align: left;
+            font-size: 20px;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* This spreads the child elements to both ends */
+            
+        }
+        .left-justified {
+            margin-left: 25px;
+            font-style: italic;
+            font-size: 16px;
+        }
+        .left-justified-title {
+            margin-left: 25px;
+            font-weight: 800;
+            font-size: 18px;
+        }
+        .right-justified {
+            margin-right: 30px;
+            font-style: italic;
+            text-align: right;
+            font-size: 16px;
+        }
+        .job-desc-li {
+            margin-right: 60px;
+            margin-top: 0; /* Removes the top margin */
+            margin-bottom:0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .skills-li {
+            font-family: Arial, sans-serif;
+            column-count: 3;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 14px;
+        }
+
+    </style>
