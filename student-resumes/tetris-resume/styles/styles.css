@@ -1,0 +1,15 @@
+body {
+    margin:0 auto;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 1200px;
+    height: 850px;
+    text-align: center;
+    }
+
+.skills {
+    display: table; 
+    margin: 0 auto;
+    text-align: left;
+}

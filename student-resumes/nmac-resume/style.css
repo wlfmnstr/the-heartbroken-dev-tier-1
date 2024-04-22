@@ -1,0 +1,55 @@
+body{
+    background-image: url('images/bg.png');
+    background-size: 100%;
+    box-shadow: 0vw 0vw 10vw rgba(0,0,0,.3);
+}
+
+body img{
+    box-shadow: 0vw 0vw 1vw rgba(0,0,0,.3);
+    border-radius: 100%;
+
+}
+
+
+.structure{
+    position: relative;
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0vw 1vw 10vw rgba(0,0,0,.5);  
+}
+
+
+.structure p{
+    font-size: 1.2em;
+}
+
+
+.top{
+    text-align: center;
+    
+}
+
+
+.content{
+    margin-left: 2%;
+}
+
+
+
+.content li{
+    font-size: 1.2em;
+}
+
+
+.content h1{
+    background-color: #e1bf99;
+    width: 98%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0vw 0vw 1vw rgba(0,0,0,.3);
+}
+
+
+

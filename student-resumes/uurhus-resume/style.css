@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto';
+    margin: 50px;
+    padding: 0;
+    line-height: 1.6;
+    border: 2px solid #000;
+}
+
+header, section, footer {
+    padding: 25px
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+h1 {
+    line-height: 1.6;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.experience h2, .education h2 {
+    color: orange;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+
