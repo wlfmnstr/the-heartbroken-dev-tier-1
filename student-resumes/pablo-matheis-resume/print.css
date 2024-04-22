@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#options {
+  display: none;
+}
+#paper {
+  width: 100%;
+  margin: 0;
+  padding: 0 32px;
+  font-size: 14px;
+  white-space: unset;
+  background: #ffffff;
+}
+#paper a {
+  color: #455A64;
+}
+#paper ul, #paper ol {
+  padding-left: 20px;
+}
+#paper em {
+  color: peru;
+  font-style: normal;
+}
+#paper > div {
+  margin-bottom: 24px;
+}
+#paper h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+#information {
+  text-align: center;
+}
+#information p {
+  line-height: 24px;
+  white-space: pre-wrap;
+}
+#information img.avatar {
+  width: 100px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+#paper h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #455A64;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+#paper h3 {
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 0;
+}
+#skills > ul ul {
+  margin: 4px 0;
+}
+#skills li, #works li, #education li {
+  margin-bottom: 4px;
+}
+#jobs > .single, #education > .single, #works > .single {
+  margin-bottom: 6px;
+  position: relative;
+}
+#jobs p, #education p, #works p {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+}
+#information {
+  position: relative;
+}
+#information img {
+  width: 90px;
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+#information {
+  overflow: hidden;
+}
+.qrcode {
+  display: none;
+}
+
+#paper code {
+  padding: 2px 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #455A64;
+  background-color: #455a6426;
+  height: 18px;
+  line-height: 18px;
+  font-size: 90%;
+  font-family: Consolas,monospace,serif;
+}
