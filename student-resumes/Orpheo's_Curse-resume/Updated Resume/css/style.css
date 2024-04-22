@@ -1,0 +1,23 @@
+html {
+    margin: 0.5in 0.75in;
+}
+
+#contact {
+    text-align: center;
+}
+
+.alignleft {
+    float: left;
+    margin: auto;
+}
+
+.alignleftemphasized {
+    float: left;
+    font-style: italic;
+    margin: auto;
+}
+
+.alignright {
+    float: right;
+    margin: auto;
+}

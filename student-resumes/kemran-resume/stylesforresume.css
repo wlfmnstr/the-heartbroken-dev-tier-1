@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.header h1 {
+    font-size: 26px;
+}
+.header p {
+    color: #666;
+}
+.section {
+    margin-bottom: 20px;
+}
+.section h2 {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 2px solid #e2e2e2;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+.experience, .education {
+    margin-left: 20px;
+}
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.time-period {
+    font-style: italic;
+    color: #666;
+    font-size: 16px;
+}
+.details {
+    margin-top: 5px;
+    line-height: 1.6;
+}
