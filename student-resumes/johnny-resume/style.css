@@ -1,0 +1,83 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #212121;
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    padding: 20px;
+}
+
+h1 {
+    color: #212121;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #212121;
+    text-align: left;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #212121;
+}
+
+h3 {
+    color: #212121;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #424242;
+}
+
+p strong {
+    color: #0061a8;
+    font-weight: 600;
+}
+
+a {
+    color: #0061a8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #212121;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #212121;
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #424242;
+}
+
+ul li strong {
+    color: #0061a8;
+    font-weight: 600;
+}
+
+/* Add some animation to the page */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+body {
+    animation: fadeIn 2s ease-in 1;
+}

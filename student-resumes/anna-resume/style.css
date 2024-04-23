@@ -1,0 +1,43 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    max-width: 960px;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 3em;;
+}
+
+header {
+    text-align: center;
+    margin: auto 2em;
+}
+
+section {
+    margin: auto 1em 4em 2em;
+}
+
+i {
+    margin-right: .5em;
+}
+
+p {
+    margin: .2em auto;
+}
+
+hr {
+    border: none;
+    background-color: cadetblue;
+    height: 1px;
+}
+
+h1, h2 {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+#mainLeft {
+    border-right: 1px solid cadetblue;
+}
