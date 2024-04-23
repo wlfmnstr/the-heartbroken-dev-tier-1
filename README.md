@@ -218,10 +218,11 @@ Here’s a diagram (if this is helpful, great! If its just more confusion, don�
 
 1. After you’ve forked the “upstream” repository and have navigated to **your** forked repo on GitHub, copy the git url from the repository page. Screenshot: ![assets/copy-repo-url.png](assets/copy-repo-url.png)
 2. In your command prompt, navigate to the location you want to clone your repository to in your file system, then run the command `git clone` followed by the url you copied. In my case that looks like this: ![assets/git-clone-command.png](assets/git-clone-command.png)
+(To navigate to the location you want to clone your repository - use the 'cd' command followed by the path to the folder you choose - this can be copied from your file explorer). ![image](https://github.com/wlfmnstr/the-heartbroken-dev-tier-1/assets/165062302/4130b899-c33d-4318-aa81-e09211ecfc57)
 
-   This will pull down the repo to you computer, creating a directory wherever you run the command, named whatever the repository you are cloning is named. In this case, the directory it created was called `the-heartbroken-dev-tier-1`.
+   This will pull down the repo to your computer, creating a directory wherever you run the command, named whatever the repository you are cloning is named. In this case, the directory it created was called `the-heartbroken-dev-tier-1`.
 
-3. List the contents of the directory you’re in to confirm the clone operation was successful: ![assets/list-cloned-directory.png](assets/list-cloned-directory.png)
+3. List the contents of the directory you’re in 'dir' to confirm the clone operation was successful: ![assets/list-cloned-directory.png](assets/list-cloned-directory.png)
    (I also used the `|` pipe and `grep` commands in my example to filter the results of running the list contents command `ls` to just results the contained `the-heart`. If you’re interested, you can read about pipe and grep in linux here: https://faculty.winthrop.edu/dannellys/csci208lab/lab09.htm)
 
 #### Open the Repository You Cloned
@@ -246,9 +247,9 @@ Now we want to add some of your code to this repository. We’ll use the html an
 
 Ok, now we’ve made changes to our local repository, and we should “push” these changes to our remote repository so they aren’t just on our computer.
 
-1. From your command prompt, navigate to this repository’s directory, and add the new files and changes to the git “staging area.” Do this with the `git add` command. Some notes:
+1. From your command prompt, navigate to this repository’s directory using 'cd', and add the new files and changes to the git “staging area.” Do this with the `git add` command. Some notes:
 	1. You can see what the state of your repository is, including changed files and what has been added to the staging area by running `git status`: ![assets/git-status.png](assets/git-status.png)
-	2. `git add` needs an additional argument passed to it: the specific files you want to add. You can specify the files specifically, one at a time, or multiple other ways.
+	2. `git add` needs an additional argument passed to it: the specific files you want to add. You can specify the files specifically, one at a time, or multiple other ways. (git add doesn't need you to add the folder only the specific files) 
 	3. A nice shortcut if you want to add everything that’s been updated to the staging area is the `.` specifier, which says “the things in my current *working directory*” (working directory just means the directory you’ve currently navigated to in your command prompt).
 	4. So, the end result is (assuming you’ve navigated to your repository folder): `git add .` ![assets/git-add-command.png](assets/git-add-command.png)
 	5. Run `git status` again and see that the files have been staged and are ready to be “committed”: ![assets/status-pre-commit.png](assets/status-pre-commit.png)

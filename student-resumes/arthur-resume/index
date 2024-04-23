@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Courteaud - CV</title>
+    <style>
+
+        /* CSS style */
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            background-color: #f6efdd; 
+            color: #0d0540;
+            text-align: justify;
+            margin: 0;
+        }
+
+        h1 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+
+        h4 {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            margin: 10px;
+        }
+
+        section {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            line-height: 22px;
+            max-width: 600px; 
+            text-align: justify;
+        }
+
+        .subtext {
+            font-size: small;
+            color: #7a7a7a;
+            line-height: 15px;
+            margin: 0px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column1 {
+            position: relative;
+            justify-content: center;
+            flex: 0 0 20%;
+            padding: 20px;
+            border-right: 0.5px solid #7a7a7a;
+            color: #FFFFFF;
+            background-color: rgb(28, 24, 53);
+        }
+
+        .column1 img {
+            display: block; 
+            margin: 0 auto;
+            border-radius: 5px;
+            max-width: 75%;
+            height: auto;
+            width: auto; 
+        }
+
+        .column2 {
+            flex: 0 0 80%;
+            padding: 20px;
+            border-left: 0.5px solid #7a7a7a;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 0; 
+            left: 0;
+            font-size: smaller;
+        }
+
+        a.link {
+            margin: 10px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+        
+            <img src="assets/0015Arthur-Courteaud [137].jpg" alt="my picture">
+            <h1>Arthur Courteaud</h1>
+
+            <h3>Contact Information</h3>
+            <p>Paris, France</p>
+            <p>arthurcourteaud@gmail.com</p>
+            <a href="https://www.linkedin.com/in/arthur-courteaud/" class="link">LinkedIn</a>
+
+            <h4>Languages</h4>
+            <p>French</p>
+            <p>English</p>
+            <p>Portuguese</p>
+            <p>Spanish</p>
+            <p>Arabic</p>
+
+            <p class="footer">&copy; 2024, Arthur Courteaud</p>
+
+        </div>
+
+        <div class="column2">
+
+            <section id="profile">
+                <h2>Profile Summary</h2>
+                <p>At 23 years of age, I am soon to complete my training as a lieutenant at the Saint-Cyr Military Academy, but wish for personal reasons to pursue a different career path. I co-founded the startup 'Tuvens' as a passion project, inwhich I am involved as Chief Product Officer within an international development team. I am now actively seeking my next professional opportunity.</p>
+            </section>
+        
+            <section id="professionnal-experience">
+                <h2>Professionnal Experience</h2>
+        
+                <h4>Second Lieutenant, Saint-Cyr Coëtquidan Military Academy</h4>
+                <p class="subtext">August 2021 - July 2024</p>
+                <p>Learning the principles of leadership through example, team management in difficult conditions, HR & people management skills, as well as logistics.</p>
+        
+                <h4>Drill sergeant, French Foreign Legion Ath Regiment, Castelnaudary</h4>
+                <p class="subtext">January - April 2021</p>
+                <p>Supervizing the initial training for young recruits of the French Foreign Legion, I developed my flexibility, skills and commitment to the mission in a demanding environment.</p>
+        
+                <h4>Co-Founder & Lead User Interface Designer, Tuvens</h4>
+                <p class="subtext">June 2023 - January 2024</p>
+                <p>In charge of a team of designers tasked with creating the ‘Tuvens’ online platform, I worked in close collaboration with frontend developpers to launch the web-app, operating in an international environnement in English.</p>
+        
+                <h4>Co-Founder & Product Manager, Tuvens</h4>
+                <p class="subtext">January 2024 - current</p>
+                <p>In charge of product management, I supervize weekly focus groups with early users and beta testers, gather their feedback about the app, and coordinate with backend and frontend development teams to enact the necessary changes.</p>
+        
+            </section>
+        
+            <section id="education">
+                <h2>Education</h2>
+        
+                <p>Louis-le-Grand High School, Paris</p>
+                <p class="subtext">September 2016 - June 2018</p>
+        
+                <p>Military Preparatory Course, Saint-Cyr High School</p>
+                <p class="subtext">August 2018 - July 2021</p>
+        
+                <p>Entrance Exam for the Ecole Normale Supérieure</p>
+                <p class="subtext">July 2021</p>
+        
+                <p>Master's Degree in History of Armed Conflicts in Europe</p>
+                <p class="subtext">August 2021 - July 2024</p>
+        
+                <p>International semester in Beirut, Lebanon</p>
+                <p class="subtext">September - December 2023</p>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>

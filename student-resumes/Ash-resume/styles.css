@@ -1,0 +1,170 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:url(Font/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Roboto-Thin';
+    src:url(Font/Roboto-Thin.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src:url(Font/Roboto-Bold.ttf) format("truetype");
+}
+
+
+.bold{
+    font-family: "Roboto-Bold", serif;
+}
+
+
+h1,h2{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: darkslategray;
+
+}
+.hrr{
+    margin-right: 20px;
+}
+
+.main{
+    font-family: Roboto, serif;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2.5fr;
+
+
+}
+.left{
+    background-color: #07363b;
+
+}
+
+.right{
+    background-color: #fff9ec;
+    padding-left: 20px;
+    color: slategray;
+}
+
+.name{
+    padding-top: 30px;
+    color: darkslategray;
+    font-size: xxx-large;
+}
+
+.exp{
+    padding-top: 50px;
+    font-family: Roboto-Bold;
+}
+
+.expblk{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    font-size: larger;
+}
+.expsld{
+    padding-left: 3vw;
+    padding-top: 0px;
+}
+.date{
+    font-family: Roboto-Bold;
+    line-height: 0;
+}
+
+.circle, .line {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: darkslategray;
+    border-radius: 50%;
+}
+
+.line {
+    width: 2px;
+    height: 100%;
+    background-color: darkslategray;
+}
+.job{
+    font-family: Roboto-Bold;
+    font-size: x-large;
+    line-height: 0;
+}
+.refh{
+    padding-top: 30px;
+    font-family: Roboto-Bold;
+}
+.refgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.refjob{
+    font-family: Roboto;
+    font-size: x-large;
+    line-height: 0;
+}
+
+.boldph{
+    color: #07363b;
+}
+.no{
+    color: slategray;
+    font-family: Roboto;
+}
+
+.imgdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    border-radius: 50%;
+}
+
+.leftcont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: left;
+    justify-content: space-between;
+    color: white;
+    margin-left: 30%;
+}
+
+.hl{
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+.hle{
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+.hrl{
+    color: #fff9ec;
+    width: 100%;
+}
